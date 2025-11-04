@@ -7,5 +7,17 @@ public class Program
         Console.WriteLine("Hello, World!");
 
         Console.WriteLine("this is a new branch named test");
+
+        Console.Write("enter your name:");
+
+        string name = Console.ReadLine();
+
+        if (name == null)
+        {
+            Console.WriteLine("No valid input revieved");
+            return;
+        }
+
+        Console.WriteLine($"Hello, {name}");
     }
 }
